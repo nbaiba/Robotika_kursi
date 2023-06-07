@@ -1,29 +1,29 @@
 import datetime
 
-# # ###
-# # # 1st task
-# # ###
+# ###
+# # 1st task
+# ###
 year_now = datetime.datetime.now().year
 
-# # # ask name
+# ask name
 name = input("Whats your name? => ")
 
-# # # ask age, asign to int
+# ask age, asign to int
 age = int(float(input(f"Nice to meet you {name} how old are you? => ")))
 
-# # # print with calculations 
+# print with calculations 
 print(f"{name}, after {100 - age} years you will be 100 years old, and that will be in year {100 - age + year_now}")
 
-# # ###
-# # # 2nd task
-# # ###
+# ###
+# # 2nd task
+# ###
 
-# # # ask measurements
+# ask measurements
 width = float(input("What is width of room? => "))
 height = float(input("What is height of room? => "))
 length = float(input("What is length of room? => "))
 
-# # calculate and print volums
+# calculate and print volums
 print(f"Total volume is {round(width * height * length, 2)}")
 
 
@@ -31,20 +31,20 @@ print(f"Total volume is {round(width * height * length, 2)}")
 # # 3rd task
 # ###
 
-# # ask temperature, asign to variable
+# ask temperature, asign to variable
 temperature = float(input("Whats temperature right now in Celsius? => "))
 
-# # print farenheits with calculation
+# print farenheits with calculation
 print(f"In Farenheit that will be {round(32 + temperature * (9/5), 2)}")
 
 # ###
 # # 4th task
 # ###
 
-# ## ask body temperature
+# ask body temperature
 temperature = float(input("Whats your body temperature? => "))
  
-# # check temperature and give feedback
+# check temperature and give feedback
 if temperature < 35:
     print("Isn't it too cold?")
 elif temperature >= 35 and temperature <= 37:
@@ -52,9 +52,9 @@ elif temperature >= 35 and temperature <= 37:
 else:
     print("You might be sick")
 
-###
+# ###
 # 5th task
-###
+# ###
 
 # ask for salary amount and years worked
 monthly_salary = float(input("What is your salary? => "))
