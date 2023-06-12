@@ -91,9 +91,7 @@ elif numbers[2] <= numbers[0] <= numbers[1]:
     print(f"{numbers[2]} {numbers[0]} {numbers[1]}")
 elif numbers[1] <= numbers[0] <= numbers[2]:
      print(f"{numbers[1]} {numbers[0]} {numbers[2]}")
-elif numbers[1] <= numbers[2] <= numbers[0]:
-     print(f"{numbers[1]} {numbers[2]} {numbers[0]}")
 else:
-    print("Some error occurred, cant figure it out")
+    print(f"{numbers[1]} {numbers[2]} {numbers[0]}")
 
 print(sorted(numbers))
