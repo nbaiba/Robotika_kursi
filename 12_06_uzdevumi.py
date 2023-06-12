@@ -27,13 +27,13 @@ while not is_valid:
     except ValueError:
         print("Enter NUMBER")
 
-line_width = 0
+line_width = 1
 
 if is_valid:
     for n in range(height):
-        print("*" + "*" * line_width)
+        spaces = height - n - 1
+        print(" " * spaces + "*" * line_width + " " * spaces)
         line_width += 2
-print('\n')
 
 ############
 # Task Nr.3
