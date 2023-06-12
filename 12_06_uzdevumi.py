@@ -19,12 +19,20 @@ print('\n')
 # Task Nr.2
 ############
 
-height = int(input("Enter height of a tree: "))
+is_valid = False
+while not is_valid:
+    try:
+        height = int(input("Enter height (Number) of a tree: "))
+        is_valid = True
+    except ValueError:
+        print("Enter NUMBER")
+
 line_width = 0
 
-for n in range(height):
-    print("*" + "*" * line_width)
-    line_width += 2
+if is_valid:
+    for n in range(height):
+        print("*" + "*" * line_width)
+        line_width += 2
 print('\n')
 
 ############
