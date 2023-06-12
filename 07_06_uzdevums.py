@@ -68,3 +68,32 @@ if years_worked > 2:
     print(f"Tour bonus: {bonus}")
 else:
     print("Not enought work done in this company")
+
+
+
+# ###
+# 6th task
+# ###
+
+numbers = []
+
+for i in range(3):
+    number = float(input(f"Enter number {len(numbers) + 1}: ", ))
+    numbers.append(number)
+
+if numbers[0] <= numbers[1] <= numbers[2]:
+    print(f"{numbers[0]} {numbers[1]} {numbers[2]}")
+elif numbers[0] <= numbers[2] <= numbers[1]:
+    print(f"{numbers[0]} {numbers[2]} {numbers[1]}")
+elif numbers[2] <= numbers[1] <= numbers[0]:
+    print(f"{numbers[2]} {numbers[1]} {numbers[0]}")
+elif numbers[2] <= numbers[0] <= numbers[1]:
+    print(f"{numbers[2]} {numbers[0]} {numbers[1]}")
+elif numbers[1] <= numbers[0] <= numbers[2]:
+     print(f"{numbers[1]} {numbers[0]} {numbers[2]}")
+elif numbers[1] <= numbers[2] <= numbers[0]:
+     print(f"{numbers[1]} {numbers[2]} {numbers[0]}")
+else:
+    print("Some error occurred, cant figure it out")
+
+print(sorted(numbers))
