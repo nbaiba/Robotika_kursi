@@ -2,7 +2,7 @@
 # Task Nr.1
 ############
 
-for n in range(100):
+for n in range(101):
     text = ''
     if(n % 7 == 0 and n % 5 == 0):
         text += 'FizzBuzz'
