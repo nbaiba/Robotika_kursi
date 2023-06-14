@@ -39,7 +39,7 @@ if is_valid:
 # Task Nr.3
 ############
 
-for n in range(1, 16):
+for n in range(1, 35):
     if (n != 1) and ((n % 2 != 0 and n % 3 != 0) or n == 2 or n == 3):
         print(f"{n} is prime number")
     else:
