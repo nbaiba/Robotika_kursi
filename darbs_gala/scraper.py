@@ -78,21 +78,20 @@ def delete_wiki_data_file():
     else:
         print("The 'wiki_data.txt' file does not exist.")
 
-if __name__ == "__main__":
     # make a list of countries in Latvian
-    countries = dict(countries_for_language('lv'))
+countries = dict(countries_for_language('lv'))
 
-    while True:
-        user_input = input("Enter word you are searching (in Latvian): ")
+while True:
+    user_input = input("Enter word you are searching (in Latvian): ")
 
-        # search in wiki
-        search_in_wikipedia(user_input, countries)
+    # search in wiki
+    search_in_wikipedia(user_input, countries)
 
-        # ask for the next action and take action
-        action = input("Enter 'y' to continue searching, 'q' to quit, or 'd' to delete the 'wiki_data.txt' file: ")
-        if action.lower() == 'q':
-            break
-        elif action.lower() == 'd':
-            delete_wiki_data_file()
-        else:
-            print("Continuing the search.")
+    # ask for the next action and take action
+    action = input("Enter 'y' to continue searching, 'q' to quit, or 'd' to delete the 'wiki_data.txt' file: ")
+    if action.lower() == 'q':
+        break
+    elif action.lower() == 'd':
+        delete_wiki_data_file()
+    else:
+        print("Continuing the search.")
